@@ -1,6 +1,6 @@
 ---
 title: Malicious Erection LLC
-feature_image: "./img/logo-black.jpg"
+feature_image: "./images/logo-black.jpg"
 ---
 
 Coming soon...
