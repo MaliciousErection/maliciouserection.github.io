@@ -39,6 +39,8 @@ navigation_header:
   url: /about/
 - title: Blog
   url: /blog/
+- title: Vulnerability Disclosure Policy
+  url: /vulnerability-disclosure-policy/
 
 # Footer nav
 navigation_footer:
