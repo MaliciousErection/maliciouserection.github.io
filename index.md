@@ -3,4 +3,4 @@ title: Malicious Erection LLC
 feature_image: "./images/logo-black.jpg"
 ---
 
-Coming soon...
+Working hard to go up in the world!
