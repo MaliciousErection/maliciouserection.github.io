@@ -39,6 +39,8 @@ navigation_header:
   url: /about/
 - title: Blog
   url: /blog/
+- title: Tools
+  url: /tools/
 - title: Vulnerability Disclosure Policy
   url: /vulnerability-disclosure-policy/
 
