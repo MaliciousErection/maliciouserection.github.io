@@ -52,12 +52,11 @@ navigation_footer:
 # Collections
 collections:
   posts:
-    title: Posts
+    title: Blog Posts
     output: true
-    description: "yayDescriptionYay"
-    feature_text: |
-      yayTextYay
-    feature_image: "https://maliciouserection.com/images/logo-black.jpg"
+    description: ""
+    feature_text: 
+    feature_image: "/images/logo-black.jpg"
 
 # Collection settings
 defaults:

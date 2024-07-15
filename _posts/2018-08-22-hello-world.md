@@ -2,7 +2,7 @@
 title: Hello World
 categories:
 - General
-feature_image: "https://maliciouserection.com/images/logo-black.jpg"
+feature_image: "/images/logo-black.jpg"
 ---
 
 Yay!
