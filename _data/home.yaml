@@ -1,0 +1,41 @@
+# Hero
+title: Pentesting Exploits Noted In Smartphones
+subtitle: Take your skills as an Android penetration tester to the next level by exploring actively exploited security threats and vulnerabilities on the Android platform.
+image1: /assets/images/axolotl-text.png
+image2: /assets/images/axolotl-face.png
+# Training
+about_training_title: Your Comprehensive Training Journey
+about_training_description: Using our Axolotl test application, created specifically for this course, you will practice building your own "attacker" application designed to exploit each discovered vulnerability. Real-world scenarios will illustrate the connection between theoretical knowledge and real-world attack strategies, equipping you with the skills to identify and exploit Android application weaknesses.
+about_training_features:
+  - title: Intent Mechanics
+    description: Explore `getIntent()`, Browsable Intents, NFC tag exploits, and MIME-type hijacking.
+  - title: Unexported Content Providers
+    description: Abuse `grantUriPermissions` in ways typical testing overlooks.
+  - title: WebView Vulnerabilities
+    description: Understand JavaScript Bridge threats, file access tricks, and Cross-Origin policy flaws.
+  - title: Custom Permissions
+    description: Delve into custom permission structures for exploitation scenarios.
+  - title: Loading Custom DEX Files
+    description: Dynamically inject malicious code into target apps to bypass security measures.
+# Instructor
+about_instructor_title: Your Instructor - Ken Gannon / 伊藤 剣
+about_instructor_position: CEO of Malicious Erection LLC
+about_instructor_description: |
+  As a seasoned penetration tester with over a decade of experience, I specialize in mobile application security. My accomplishments include:
+
+  • Obtaining multiple CVEs related to mobile applications
+
+  • Ranking among the top 10 bug bounty contributors for the Samsung Bug Bounty program in 2021
+
+  • Successfully exploiting the Xiaomi 13 Pro at Pwn2Own 2023
+
+  • Successfully compromising the Samsung S24 at Pwn2Own 2024
+
+  In addition to my mobile application expertise, I hold various security certifications, including the OffSec OSCE3. Now, I'm dedicated to sharing my knowledge with students seeking to enhance their penetration testing skills in the mobile security domain.
+about_instructor_video: https://www.youtube.com/embed/eM9dOhHH2AA?si=wGOjNUhvi-9joNQI
+# Banner
+banner_title: Ready to take your Android penetration testing skills to the next level?
+banner_description: Our course is availalbe on Udemy! Check it out by clicking the link below!
+banner_cta:
+  text: Enroll now
+  link: "https://www.udemy.com/course/pentesting-exploits-noted-in-smartphones-android-edition/?referralCode=3436FB58BAF063E4F19F"

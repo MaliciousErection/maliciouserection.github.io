@@ -1,0 +1,60 @@
+<div 
+  class="flex-none bg-base-100 shadow-sm h-20 navbar"
+  style="height: 10rem;"
+>
+  <div 
+    class="flex-none navbar-start"
+    style="height: 9rem;"
+  >
+    <div class="shadow-lg dropdown">
+      <div tabindex="0" role="button" class="lg:hidden btn btn-ghost">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"
+          />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="z-[1] space-y-5 bg-base-100 shadow mt-3 p-2 rounded-box w-72 menu menu-sm dropdown-content"
+      >
+        {% for item in site.navbar_items %}
+        <li class="text-secondary text-lg">
+          <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <a 
+      href="{{'/' | relative_url}}" 
+      title="{{site.title}}" 
+      class="px-5"
+      style="height: 7rem;"
+    >
+      <img
+        src="{{site.logo | relative_url}}"
+        alt="{{site.title}}"
+        class="w-32 object-center image-center"
+        style="width: 15rem;"
+      />
+    </a>
+  </div>
+  <div class="hidden lg:flex flex-1 gap-3 navbar-end">
+    <ul class="gap-3 px-1 menu menu-horizontal">
+      {% for item in site.navbar_items %}
+      <li class="font-semibold text-base">
+        <a href="{{ item.url | relative_url }}">{{ item.title }}</a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
