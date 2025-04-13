@@ -1,0 +1,89 @@
+---
+layout: section
+title: CVEs
+permalink: /cves/
+---
+
+<style>
+  @media (min-width: 768px) {
+    .cve-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .post-preview {
+    margin-bottom: 3rem;
+  }
+
+  .cve-id {
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    color: #ccc;
+  }
+
+  .post-meta {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #22b893;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+  .reference-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #3af;
+    margin-bottom: 0.25rem;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-color: #444;
+  }
+</style>
+
+<div class="cve-container post-list max-w-full px-4 sm:px-6 lg:px-8 mx-auto lg:max-w-5xl xl:max-w-[1100px]">
+  {% assign cves_sorted = site.cves | sort: "date" | reverse %}
+  {% for cve in cves_sorted %}
+    <div class="post-preview">
+      <h2><a href="{{ cve.url }}">{{ cve.title }}</a></h2>
+
+      {% if cve.cve_id %}
+        <div class="cve-id">{{ cve.cve_id }}</div>
+      {% endif %}
+
+      <p class="post-meta">{{ cve.date | date: "%B %d, %Y" }}</p>
+
+      <p>{{ cve.description }}</p>
+
+      <a class="read-more" href="{{ cve.url }}">Read more →</a>
+
+      {% if cve.reference %}
+      <br><br>External reference{% if cve.reference.size > 1 %}s{% endif %}:
+      <ul>
+        {% for link in cve.reference %}
+          <li>
+            <a class="reference-link" href="{{ link }}" target="_blank">
+              {{ link }}
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+    </div>
+    <hr>
+  {% endfor %}
+</div>

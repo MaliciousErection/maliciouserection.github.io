@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<main>
+  <!-- Header Section -->
+  <section class="flex justify-center items-center bg-secondary/75 py-16">
+    <h1 class="font-bold text-neutral-content text-5xl text-center">{{ page.title }}</h1>
+  </section>
+
+  <!-- Content Section -->
+  <section class="mx-auto py-10 text-neutral-content prose px-4 sm:px-6 lg:px-8 max-w-full lg:max-w-5xl xl:max-w-[1100px]">
+    {{ content | markdownify }}
+  </section>
+
+  <!-- CTA Button (optional) -->
+  {% if page.cta_title %}
+    <section class="flex justify-center mx-auto mb-10 px-4 sm:px-6 lg:px-8 max-w-full lg:max-w-5xl xl:max-w-[1100px]">
+      <a class="btn btn-secondary btn-lg" href="{{ page.cta_url }}">{{ page.cta_title }}</a>
+    </section>
+  {% endif %}
+</main>

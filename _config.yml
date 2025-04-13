@@ -23,6 +23,8 @@ navbar_items:
     url: /tools
   - title: Vulnerability Disclosure Policy
     url: /vulnerability-disclosure-policy
+  - title: CVEs
+    url: /cves
 
 footer_items:
   - title: Home
@@ -33,9 +35,16 @@ footer_items:
     url: /tools
   - title: Vulnerability Disclosure Policy
     url: /vulnerability-disclosure-policy
+  - title: CVEs
+    url: /cves/
 
 # Font awesome icons
 social_media:
   - title: Github
     url: "https://github.com/MaliciousErection"
     icon: fa-github
+
+collections:
+  cves:           # ← name of the collection
+    output: true  # every item gets its own page
+    permalink: /cves/:path/
