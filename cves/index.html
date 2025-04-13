@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>CVEs | Malicious Erection LLC</title>
+<meta name="generator" content="Jekyll v4.4.1" />
+<meta property="og:title" content="CVEs" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Working hard to go up in the world!" />
+<meta property="og:description" content="Working hard to go up in the world!" />
+<link rel="canonical" href="https://maliciouserection.com/cves/" />
+<meta property="og:url" content="https://maliciouserection.com/cves/" />
+<meta property="og:site_name" content="Malicious Erection LLC" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="CVEs" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Working hard to go up in the world!","headline":"CVEs","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://maliciouserection.com/assets/images/logo.png"}},"url":"https://maliciouserection.com/cves/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+  </head>
+
+  <body class="flex flex-col h-screen antialiased">
+    <div 
+  class="flex-none bg-base-100 shadow-sm h-20 navbar"
+  style="height: 10rem;"
+>
+  <div 
+    class="flex-none navbar-start"
+    style="height: 9rem;"
+  >
+    <div class="shadow-lg dropdown">
+      <div tabindex="0" role="button" class="lg:hidden btn btn-ghost">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="w-5 h-5"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h8m-8 6h16"
+          />
+        </svg>
+      </div>
+      <ul
+        tabindex="0"
+        class="z-[1] space-y-5 bg-base-100 shadow mt-3 p-2 rounded-box w-72 menu menu-sm dropdown-content"
+      >
+        
+        <li class="text-secondary text-lg">
+          <a href="/">Home</a>
+        </li>
+        
+        <li class="text-secondary text-lg">
+          <a href="/blog">Blog</a>
+        </li>
+        
+        <li class="text-secondary text-lg">
+          <a href="/tools">Tools</a>
+        </li>
+        
+        <li class="text-secondary text-lg">
+          <a href="/vulnerability-disclosure-policy">Vulnerability Disclosure Policy</a>
+        </li>
+        
+        <li class="text-secondary text-lg">
+          <a href="/cves">CVEs</a>
+        </li>
+        
+      </ul>
+    </div>
+    <a 
+      href="/" 
+      title="Malicious Erection LLC" 
+      class="px-5"
+      style="height: 7rem;"
+    >
+      <img
+        src="/assets/images/logo.png"
+        alt="Malicious Erection LLC"
+        class="w-32 object-center image-center"
+        style="width: 15rem;"
+      />
+    </a>
+  </div>
+  <div class="hidden lg:flex flex-1 gap-3 navbar-end">
+    <ul class="gap-3 px-1 menu menu-horizontal">
+      
+      <li class="font-semibold text-base">
+        <a href="/">Home</a>
+      </li>
+      
+      <li class="font-semibold text-base">
+        <a href="/blog">Blog</a>
+      </li>
+      
+      <li class="font-semibold text-base">
+        <a href="/tools">Tools</a>
+      </li>
+      
+      <li class="font-semibold text-base">
+        <a href="/vulnerability-disclosure-policy">Vulnerability Disclosure Policy</a>
+      </li>
+      
+      <li class="font-semibold text-base">
+        <a href="/cves">CVEs</a>
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    <div class="flex-1 overflow-y-auto">
+      <div class="min-h-[80vh]"><main>
+  <section class="flex justify-center items-center bg-secondary/75 py-16">
+    <h1 class="font-bold text-neutral-content text-5xl">CVEs</h1>
+  </section>
+  <section class="mx-auto py-10 text-neutral-content container">
+    <style>
+  @media (min-width: 768px) {
+    .cve-container {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .post-preview {
+    margin-bottom: 3rem;
+  }
+
+  .cve-id {
+    font-size: 1.25rem;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 0.25rem;
+    color: #ccc;
+  }
+
+  .post-meta {
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .read-more {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #22b893;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .read-more:hover {
+    text-decoration: underline;
+  }
+
+  .reference-link {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #3af;
+    margin-bottom: 0.25rem;
+  }
+
+  hr {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border-color: #444;
+  }
+</style>
+
+<div class="cve-container post-list max-w-full px-4 sm:px-6 lg:px-8 mx-auto lg:max-w-5xl xl:max-w-[1100px]">
+  
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2025-03-01_cve-2025-20926/">YayUndisclosedYay - CVE-2025-20926</a></h2>
+
+      
+        <div class="cve-id">CVE-2025-20926</div>
+      
+
+      <p class="post-meta">March 01, 2025</p>
+
+      <p>Improper export of Android application components in My Files prior to version 15.0.07.5 in Android 14 allows local attackers to access files with My Files’ privilege.</p>
+
+      <a class="read-more" href="/cves/2025-03-01_cve-2025-20926/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-20926" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2025-20926
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/securityUpdate.smsb?year=2025&amp;month=3" target="_blank">
+              https://security.samsungmobile.com/securityUpdate.smsb?year=2025&amp;month=3
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2024-12-01_cve-2024-49421/">YayUndisclosedYay - CVE-2024-49421</a></h2>
+
+      
+        <div class="cve-id">CVE-2024-49421</div>
+      
+
+      <p class="post-meta">December 01, 2024</p>
+
+      <p>Path traversal in Quick Share Agent prior to version 3.5.14.47 in Android 12, 3.5.19.41 in Android 13, and 3.5.19.42 in Android 14 allows adjacent attackers to write file in arbitrary location.</p>
+
+      <a class="read-more" href="/cves/2024-12-01_cve-2024-49421/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49421" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49421
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12" target="_blank">
+              https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2024-12-01_cve-2024-49420/">YayUndisclosedYay - CVE-2024-49420</a></h2>
+
+      
+        <div class="cve-id">CVE-2024-49420</div>
+      
+
+      <p class="post-meta">December 01, 2024</p>
+
+      <p>Improper handling of responses in GamingHub prior to version 6.1.04.6 in Korea, 7.1.03.7 in Global allows remote attackers to launch arbitrary activity.</p>
+
+      <a class="read-more" href="/cves/2024-12-01_cve-2024-49420/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49420" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49420
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12" target="_blank">
+              https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2024-12-01_cve-2024-49419/">YayUndisclosedYay - CVE-2024-49419</a></h2>
+
+      
+        <div class="cve-id">CVE-2024-49419</div>
+      
+
+      <p class="post-meta">December 01, 2024</p>
+
+      <p>Insufficient verification of url authenticity in GamingHub prior to version 6.1.03.4 in Korea, 7.1.02.4 in Global allows remote attackers to load an arbitrary URL in its webview."</p>
+
+      <a class="read-more" href="/cves/2024-12-01_cve-2024-49419/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49419" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49419
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12" target="_blank">
+              https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2024-12-01_cve-2024-49418/">YayUndisclosedYay - CVE-2024-49418</a></h2>
+
+      
+        <div class="cve-id">CVE-2024-49418</div>
+      
+
+      <p class="post-meta">December 01, 2024</p>
+
+      <p>Insufficient verification of url authenticity in GamingHub prior to version 6.1.03.4 in Korea, 7.1.02.4 in Global allows remote attackers to enable JavaScript in its webview.</p>
+
+      <a class="read-more" href="/cves/2024-12-01_cve-2024-49418/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49418" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49418
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12" target="_blank">
+              https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2024-12-01_cve-2024-49413/">YayUndisclosedYay - CVE-2024-49413</a></h2>
+
+      
+        <div class="cve-id">CVE-2024-49413</div>
+      
+
+      <p class="post-meta">December 01, 2024</p>
+
+      <p>Improper Verification of Cryptographic Signature in SmartSwitch prior to SMR Dec-2024 Release 1 allows local attackers to install malicious applications.</p>
+
+      <a class="read-more" href="/cves/2024-12-01_cve-2024-49413/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49413" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-49413
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12" target="_blank">
+              https://security.samsungmobile.com/securityUpdate.smsb?year=2024&amp;month=12
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2024-05-01_cve-2024-4406/">Xiaomi GetApps Arbitrary Application Install</a></h2>
+
+      
+        <div class="cve-id">CVE-2024-4406</div>
+      
+
+      <p class="post-meta">May 01, 2024</p>
+
+      <p>This vulnerability allows remote attackers to execute arbitrary code on affected installations of Xiaomi Pro 13 smartphones.</p>
+
+      <a class="read-more" href="/cves/2024-05-01_cve-2024-4406/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4406" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-4406
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45346" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-45346
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://www.zerodayinitiative.com/advisories/ZDI-24-419/" target="_blank">
+              https://www.zerodayinitiative.com/advisories/ZDI-24-419/
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://trust.mi.com/misrc/bulletins/advisory?cveId=545" target="_blank">
+              https://trust.mi.com/misrc/bulletins/advisory?cveId=545
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2023-01-01_cve-2023-21434/">Samsung Galaxy Store Arbitrary JavaScript Execution</a></h2>
+
+      
+        <div class="cve-id">CVE-2023-21434</div>
+      
+
+      <p class="post-meta">January 01, 2023</p>
+
+      <p>Improper input validation vulnerability in Galaxy Store prior to version 4.5.49.8 allows local attackers to execute JavaScript by launching a web page.</p>
+
+      <a class="read-more" href="/cves/2023-01-01_cve-2023-21434/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21433" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21433
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2023&amp;month=1" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2023&amp;month=1
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2023-01-01_cve-2023-21433/">Samsung Galaxy Store Arbitrary Application Install</a></h2>
+
+      
+        <div class="cve-id">CVE-2023-21433</div>
+      
+
+      <p class="post-meta">January 01, 2023</p>
+
+      <p>Improper access control vulnerability in Galaxy Store prior to version 4.5.49.8 allows local attackers to install applications from Galaxy Store.</p>
+
+      <a class="read-more" href="/cves/2023-01-01_cve-2023-21433/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21433" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-21433
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2023&amp;month=1" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2023&amp;month=1
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2022-04-01_cve-2022-28776/">Samsung Galaxy Store Arbitrary Application Install</a></h2>
+
+      
+        <div class="cve-id">CVE-2022-28776</div>
+      
+
+      <p class="post-meta">April 01, 2022</p>
+
+      <p>Improper access control vulnerability in Galaxy Store prior to version 4.5.36.4 allows attacker to install applications from Galaxy Store without user interactions.</p>
+
+      <a class="read-more" href="/cves/2022-04-01_cve-2022-28776/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28776" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28776
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2022&amp;month=4" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2022&amp;month=4
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2022-04-01_cve-2022-28775/">Samsung Flow File System Access</a></h2>
+
+      
+        <div class="cve-id">CVE-2022-28775</div>
+      
+
+      <p class="post-meta">April 01, 2022</p>
+
+      <p>Improper access control vulnerability in Samsung Flow prior to version 4.8.06.5 allows attacker to write the file without Samsung Flow permission.</p>
+
+      <a class="read-more" href="/cves/2022-04-01_cve-2022-28775/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28775" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-28775
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2022&amp;month=4" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2022&amp;month=4
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2022-01-01_cve-2022-22288/">Samsung Galaxy Store Whitelist Abuse</a></h2>
+
+      
+        <div class="cve-id">CVE-2022-22288</div>
+      
+
+      <p class="post-meta">January 01, 2022</p>
+
+      <p>Improper authorization vulnerability in Galaxy Store prior to 4.5.36.5 allows remote app installation of the allowlist.</p>
+
+      <a class="read-more" href="/cves/2022-01-01_cve-2022-22288/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22288" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2022-22288
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2022&amp;month=1" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2022&amp;month=1
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2021-04-01_cve-2021-25374/">Samsung Members Improper Authorization</a></h2>
+
+      
+        <div class="cve-id">CVE-2021-25374</div>
+      
+
+      <p class="post-meta">April 01, 2021</p>
+
+      <p>An improper authorization vulnerability in Samsung Members “samsungrewards” scheme for deeplink in versions 2.4.83.9 in Android O(8.1) and below, and 3.9.00.9 in Android P(9.0) and above allows remote attackers to access a user data related with Samsung Account.</p>
+
+      <a class="read-more" href="/cves/2021-04-01_cve-2021-25374/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25374" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25374
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2021&amp;month=4" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2021&amp;month=4
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2021-02-01_cve-2021-25367/">Samsung Notes Path Traversal</a></h2>
+
+      
+        <div class="cve-id">CVE-2021-25367</div>
+      
+
+      <p class="post-meta">February 01, 2021</p>
+
+      <p>Path Traversal vulnerability in Samsung Notes prior to version 4.2.00.22 allows attackers to access local files without permission.</p>
+
+      <a class="read-more" href="/cves/2021-02-01_cve-2021-25367/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25367" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25367
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2021&amp;month=2" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2021&amp;month=2
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2021-02-01_cve-2021-25354/">Samsung Internet Improper Input Check</a></h2>
+
+      
+        <div class="cve-id">CVE-2021-25354</div>
+      
+
+      <p class="post-meta">February 01, 2021</p>
+
+      <p>Improper input check in Samsung Internet prior to version 13.2.1.46 allows attackers to launch non-exported activity in Samsung Browser via malicious deeplink.</p>
+
+      <a class="read-more" href="/cves/2021-02-01_cve-2021-25354/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25354" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2021-25354
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://security.samsungmobile.com/serviceWeb.smsb?year=2021&amp;month=2" target="_blank">
+              https://security.samsungmobile.com/serviceWeb.smsb?year=2021&amp;month=2
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2019-11-20_cve-2019-15972/">Cisco UCM SQLi</a></h2>
+
+      
+        <div class="cve-id">CVE-2019-15972</div>
+      
+
+      <p class="post-meta">November 20, 2019</p>
+
+      <p>A vulnerability in the web-based management interface of Cisco Unified Communications Manager could allow an authenticated, remote attacker to conduct SQL injection attacks on an affected system.</p>
+
+      <a class="read-more" href="/cves/2019-11-20_cve-2019-15972/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15972" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-15972
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191120-cucm-sql" target="_blank">
+              https://tools.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-20191120-cucm-sql
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+    <div class="post-preview">
+      <h2><a href="/cves/2018-10-30_cve-2018-4348/">macOS Login Screen DoS</a></h2>
+
+      
+        <div class="cve-id">CVE-2018-4348</div>
+      
+
+      <p class="post-meta">October 30, 2018</p>
+
+      <p>Some versions of macOS had a DoS issue on their login screen.</p>
+
+      <a class="read-more" href="/cves/2018-10-30_cve-2018-4348/">Read more →</a>
+
+      
+      <br /><br />External references:
+      <ul>
+        
+          <li>
+            <a class="reference-link" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-4348" target="_blank">
+              https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2018-4348
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://support.apple.com/en-us/HT209193" target="_blank">
+              https://support.apple.com/en-us/HT209193
+            </a>
+          </li>
+        
+          <li>
+            <a class="reference-link" href="https://support.apple.com/en-us/HT209139" target="_blank">
+              https://support.apple.com/en-us/HT209139
+            </a>
+          </li>
+        
+      </ul>
+      
+    </div>
+    <hr />
+  
+</div>
+
+  </section>
+  
+</main>
+</div>
+      <div class="bg-neutral-800">
+  <footer class="mx-auto py-10 container">
+    <div class="flex flex-wrap justify-center gap-3 mb-10 align-center">
+      
+      <a href="/" class="btn btn-secondary btn-ghost"
+        >Home</a
+      >
+      
+      <a href="/blog/" class="btn btn-secondary btn-ghost"
+        >Blog</a
+      >
+      
+      <a href="/tools" class="btn btn-secondary btn-ghost"
+        >Tools</a
+      >
+      
+      <a href="/vulnerability-disclosure-policy" class="btn btn-secondary btn-ghost"
+        >Vulnerability Disclosure Policy</a
+      >
+      
+      <a href="/cves/" class="btn btn-secondary btn-ghost"
+        >CVEs</a
+      >
+      
+    </div>
+    <div class="flex justify-center items-center gap-3 mb-10">
+      
+      <a
+        title="Github"
+        href="https://github.com/MaliciousErection"
+        class="btn btn-ghost btn-circle"
+      >
+        <i class="fa fa-github text-xl"></i>
+      </a>
+      
+    </div>
+    <p class="text-center">© 2025 Malicious Erection LLC.</p>
+  </footer>
+</div>
+
+    </div>
+  </body>
+</html>
