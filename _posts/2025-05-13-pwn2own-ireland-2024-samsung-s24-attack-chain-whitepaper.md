@@ -971,7 +971,7 @@ yay.apk
 
 For our exploit chain, when the attacker phone generates a QR code, the random code at the end of the URL should be used in bug 4. This will force the target phone to download the .apk file automatically without user confirmation.
 
-### Bug 5 – Silently install .apk file located on disk
+### Bug 5 – Silently install `.apk` file located on disk
 
 #### Exploit Code
 
